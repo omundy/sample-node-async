@@ -1,16 +1,16 @@
 "use strict";
 
 // import a module
-const ex = require('./examples/module');
+const exampleModule = require('./examples/module');
 
 // log a random num 0-1
-console.log(ex.randomNumber());
+console.log(exampleModule.randomNumber());
 
 // log a random num 0-100
-console.log(ex.randomNumber(100));
+console.log(exampleModule.randomNumber(100));
 
 // log the date
-console.log(ex.myDateTime());
+console.log(exampleModule.myDateTime());
 
 // import the http module
 const http = require('http');
@@ -20,6 +20,6 @@ http.createServer(function(req, res) {
 	res.writeHead(200, {
 		'Content-Type': 'text/html'
 	});
-	res.write("The date and time are currently: " + ex.myDateTime());
+	res.write("The date and time are currently: " + exampleModule.myDateTime());
 	res.end();
-}).listen(8080);
+}).listen(3000);
