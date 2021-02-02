@@ -12,10 +12,10 @@
 const fetch = require('node-fetch');
 
 
-// fetch the contents of a web page
-fetch('https://github.com/')
-	.then(res => res.text())
-	.then(body => console.log(body));
+// // fetch the contents of a web page
+// fetch('https://github.com/')
+// 	.then(res => res.text())
+// 	.then(body => console.log(body));
 
 // fetch JSON data
 fetch('https://api.github.com/users/github')
@@ -25,4 +25,4 @@ fetch('https://api.github.com/users/github')
 // fetch JSON data
 fetch('https://tallysavestheinternet.com/api/feed/range/plusStream/1/minute')
 	.then(res => res.json())
-	.then(data => console.log(data));
+	.then(json => console.log(json));
